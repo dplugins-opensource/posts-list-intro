@@ -11,7 +11,7 @@
   gap: 2rem;
   padding-right: 1rem;
 }
-.post-category-list .post-category-list li a {
+.post-category-list li a {
   background-color: #1d2327;
   color: white;
   padding: 2rem;
@@ -20,9 +20,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
   text-decoration: none;
 }
-.post-category-list .post-category-list li:hover a {
+.post-category-list li:hover a {
   background-color: #2271b1;
 }

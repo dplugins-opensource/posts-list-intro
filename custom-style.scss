@@ -1,3 +1,7 @@
+$primary-bg: #1d2327;
+$hover-bg: #2271b1;
+$primary-color: white;
+
 .wrap {
     display: none !important;
 }
@@ -12,22 +16,21 @@
         padding-right: 1rem;
     }
 
-    .post-category-list li{
+    li {
         a {
-            background-color: #1d2327;
-            color: white;
+            background-color: $primary-bg;
+            color: $primary-color;
             padding: 2rem;
             min-height: 150px;
             height: 10vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
             text-decoration: none;
         }
-        
+
         &:hover a {
-            background-color: #2271b1;
+            background-color: $hover-bg;
         }
     }
 }
