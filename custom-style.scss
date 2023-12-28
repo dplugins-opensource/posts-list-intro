@@ -1,0 +1,33 @@
+.wrap {
+    display: none !important;
+}
+
+.post-category-list {
+    margin-top: 2rem;
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding-right: 1rem;
+    }
+
+    .post-category-list li{
+        a {
+            background-color: #1d2327;
+            color: white;
+            padding: 2rem;
+            min-height: 150px;
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+        }
+        
+        &:hover a {
+            background-color: #2271b1;
+        }
+    }
+}
