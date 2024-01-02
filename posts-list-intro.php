@@ -55,6 +55,9 @@ function my_plugin_admin_enqueue_styles()
     // Check if we are on the 'edit.php' page and 'category_name' is not set
     if ($pagenow == 'edit.php' && !isset($_GET['category_name']) && get_current_screen()->post_type == 'post') {
         $css_url = plugins_url('custom-style.css', __FILE__);
+        $js_url = plugins_url('custom-script.js', __FILE__); // JavaScript file URL
+
         wp_enqueue_style('my-custom-admin-style', $css_url);
+        wp_enqueue_script('my-custom-admin-script', $js_url, array('jquery'), false, true); // Enqueue JavaScript file
     }
 }

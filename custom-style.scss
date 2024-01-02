@@ -2,35 +2,61 @@ $primary-bg: #1d2327;
 $hover-bg: #2271b1;
 $primary-color: white;
 
-.wrap {
-    display: none !important;
+.post-category-list{
+    display: none;
 }
 
-.post-category-list {
-    margin-top: 2rem;
+#toggleGrid{
+    margin-left: 6px;
+    padding-right: 16px !important;
+    background-color: #565f65 !important;
+    border-color: $primary-bg !important;
+    color: white !important;
 
-    ul {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-        padding-right: 1rem;
+    &:after{
+        display: none !important;
+    }
+}
+
+.grid-enabled{
+
+    .wrap {
+        display: none !important;
+    }
+    
+    .post-category-list {
+        margin-top: 2rem;
+        display: block;
+    
+        ul {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding-right: 1rem;
+        }
+    
+        li {
+            a {
+                background-color: $primary-bg;
+                color: $primary-color;
+                padding: 2rem;
+                min-height: 150px;
+                height: 10vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                margin: 0;
+            }
+
+            h2{
+                margin: 0;
+            }
+    
+            &:hover a {
+                background-color: $hover-bg;
+            }
+        }
     }
 
-    li {
-        a {
-            background-color: $primary-bg;
-            color: $primary-color;
-            padding: 2rem;
-            min-height: 150px;
-            height: 10vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-        }
-
-        &:hover a {
-            background-color: $hover-bg;
-        }
-    }
 }
